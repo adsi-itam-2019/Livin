@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<h1>Pages#inicio</h1>
+<h1>Anuncios</h1>
     <div class="post">
-       
+           <h3>
             <% @posts.each do |post| %>
-            
-                <li> Mensualidad:  <%= post.mensualidad %>. Descripci[on:  <%= post.descrip %></li>
+                
+                 
+                 
+                <li> <p><img src="http://albatrosmercantilpvinmobiliaria.com.mx/Imagenes/renta/SanAngel/condominio/TIZAPAN/DSC00003.JPG" > </p> <p>Mensualidad:  <%= post.mensualidad %>.</p>  <p>Descripción:  <%= post.descrip %>. </p>
+                
+                <% if logged_in? %>
+                    <%= button_to( "Contactar", '#', class: "btn btn-primary" ) %>
+                <% end %>
+                </li>
                 
             
             <% end %>
-       
+           </h3>
     </div>
 </html>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/new', to: 'sessions#new'
 
   get '/inicio', to: 'pages#inicio'
+  post '/inicio', to: 'pages#inicio'
 
   get '/home', to: 'pages#home'
 

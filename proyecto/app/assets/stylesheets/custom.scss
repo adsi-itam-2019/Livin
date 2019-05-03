@@ -19,11 +19,16 @@ textarea{
 
 .center{
     text-align: center;
+    
+    
 }
 
 .center h1{
     margin-bottom: 10px;
+    
 }
+
+
 
 /*Tipos*/
 
@@ -49,6 +54,41 @@ h2{
     color: #777;
 }
 
+
+
+h3{
+    font-size: 1.5em;
+    
+    
+    li {
+       padding: 10px 0;
+       border-top: 1px solid #e8e8e8;
+       margin-top: 15px;
+       margin-top: 15px;
+       font-weight: normal;
+       margin-right: 600px;
+       margin-left: 600px;
+       float: center;
+       text-align: center;
+       text-align: justify;
+        
+    }
+    
+    li img{
+        max-width: 650px;
+        max-height: 550px;
+        float: center;
+        text-align: center;
+        
+        
+        margin-right: 10px;
+        margin-top: 5px;
+        
+        
+        
+    }
+}
+
 p{
     
     font-size: 1.1em;
@@ -59,7 +99,7 @@ p{
  float: left;
  margin-right: 10px;
  font-size: 2.3em;
- color: #3cfc93;
+ color: #ff6800;
  text-transform: uppercase;
  letter-spacing: -1px;
  padding-top: 9px;
