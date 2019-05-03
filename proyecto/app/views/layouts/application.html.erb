@@ -12,12 +12,10 @@
   <body>
     <%= render 'layouts/header' %>
     <div clas = "container">
-<<<<<<< HEAD
+
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
-=======
->>>>>>> 45722cd7f01a3f7d89006a7c3318cb308f3998b5
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>
