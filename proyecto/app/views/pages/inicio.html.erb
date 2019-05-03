@@ -1,2 +1,14 @@
+<!DOCTYPE html>
+<html>
 <h1>Pages#inicio</h1>
-<p>Find me in app/views/pages/inicio.html.erb</p>
+    <div class="post">
+       
+            <% @posts.each do |post| %>
+            
+                <li> Mensualidad:  <%= post.mensualidad %>. Descripci[on:  <%= post.descrip %></li>
+                
+            
+            <% end %>
+       
+    </div>
+</html>

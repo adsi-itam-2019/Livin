@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mensualidad: MyString
+  descrip: MyText
+  user: one
+
+two:
+  mensualidad: MyString
+  descrip: MyText
+  user: two

@@ -6,7 +6,7 @@
                 <% if logged_in? %>
                     <li><%= link_to "Inicio", inicio_path %></li>
                     <li><%= link_to "Mi Perfil", '#' %></li>
-                    <li><%= link_to "Agregar Propiedad", '#' %></li>
+                    <li><%= link_to "Agregar Propiedad", add_path %></li>
                     <li><%= link_to "Cerrar Sesion", logout_path , method: "delete" %></li>
                 <% else %>
                     <li><%= link_to "Crear Cuenta", signin_path %></li>

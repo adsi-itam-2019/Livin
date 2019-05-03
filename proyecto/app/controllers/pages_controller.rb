@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
+  
   def inicio
-    @user = User.find(params[:id])
+    #@user = User.find(params[:id]) 
+    @posts = Post.all
   end
 
   def home
