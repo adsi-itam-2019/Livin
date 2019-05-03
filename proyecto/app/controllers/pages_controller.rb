@@ -1,9 +1,5 @@
 class PagesController < ApplicationController
   def inicio
-<<<<<<< HEAD
-    @user = User.find(params[:id])
-=======
->>>>>>> 45722cd7f01a3f7d89006a7c3318cb308f3998b5
   end
 
   def home
@@ -13,7 +9,7 @@ class PagesController < ApplicationController
   end
   
   def signin
-<<<<<<< HEAD
+
     @user = User.new
   end
   
@@ -26,10 +22,12 @@ class PagesController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in(@user)
       flash[:success] = "Bienvenido a Livin"
       redirect_to inicio_url
     else
-      render 'new'
+      flash[:danger] = 'Correo o usuario ya ocupados'
+      redirect_to signin_url
     end
   end
   
@@ -37,7 +35,8 @@ class PagesController < ApplicationController
     params.require(:user).permit(:name, :email, :password)
   end
   
-=======
-  end
->>>>>>> 45722cd7f01a3f7d89006a7c3318cb308f3998b5
+
+
+
+
 end

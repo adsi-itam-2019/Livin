@@ -3,9 +3,15 @@
         <%= link_to "Livin", root_path, id: "logo" %>
         <nav>
             <ul class = "nav navbar-nav navbar-right">
-                <li><%= link_to "Home", inicio_path %></li>
-                <li><%= link_to "Crear Cuenta", signin_path %></li>
-                <li><%= link_to "Log in", login_path %></li>
+                <% if logged_in? %>
+                    <li><%= link_to "Inicio", inicio_path %></li>
+                    <li><%= link_to "Mi Perfil", '#' %></li>
+                    <li><%= link_to "Agregar Propiedad", '#' %></li>
+                    <li><%= link_to "Cerrar Sesion", logout_path , method: "delete" %></li>
+                <% else %>
+                    <li><%= link_to "Crear Cuenta", signin_path %></li>
+                    <li><%= link_to "Log in", new_path %></li>
+                <% end %>
             </ul>
             
         </nav>
