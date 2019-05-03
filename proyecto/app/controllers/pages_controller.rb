@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def inicio
+    @user = User.find(params[:id])
   end
 
   def home
@@ -35,8 +36,5 @@ class PagesController < ApplicationController
     params.require(:user).permit(:name, :email, :password)
   end
   
-
-
-
-
 end
+
