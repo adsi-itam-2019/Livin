@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/AFDB7CC3-29D8-0D48-929B-0B9BF384D2DE/main.js" charset="UTF-8"></script><script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.53.1/mapbox-gl.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Livin</title>
+    <script>
+        function activeModal(accion) {
+            var modal = document.getElementById(accion);
+            if (!modal.classList.contains("is-active")) {
+                modal.classList.add("is-active");
+            } else {
+                modal.classList.remove("is-active");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="hero is-danger">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="title">
+                        <h1 class="navbar-item">
+                            Livin
+                        </h1>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="hero is-dark" >
+        <br>
+        <div class="container">
+            <div class="tile is-ancestor">
+  <div class="tile is-vertical ">
+    <div class="tile">
+      <div class="tile is-parent is-8">
+        <article class="tile is-child notification is-dark">
+      <div class="content">
+        <p class="title">Mi perfil</p>
+        <p class="subtitle">Andrea Carrillo</p>
+        <br>
+        <br>
+          <p class="title">Mis propiedades guardadas</p>
+            <div class="content">
+          <section class="hero is-dark is-fullheight">
+        <div class="columns">
+            <div id="room_card" class="card column">
+                <div class="container is-fluid">
+                    <div class="card-image">
+                        <img id="img_room" src="https://www.oakshotels.com/uploads/minor/oaks/images/australia/queensland/cbd/festival-towers/600x400/1-bedroom-apartment/new-aug-2018/oaks-festival-towers-1-bedroom-bedroom-600x400px.jpg" width="640" height="400" alt="Room image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="room2_card" class="card column">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4 has-text-black">Cuarto</p>
+                            <p class="subtitle is-12 has-text-black">Cuajimalpa, Cuajimalpa, CDMX</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        Vive en un excelente cuarto no compartido con excelente compañeros.
+                        <br>Cerca del Tec Santa Fe.
+                        <br><br>
+                        <div class="field">
+                            <p class="control is-left has-text-centered">
+                                <button class="button is-danger" onclick="location.href=''">
+                                    Ver más
+                                </button>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div id="room_card" class="card column">
+                <div class="container is-fluid">
+                    <div class="card-image">
+                        <img id="img_room" src="https://z.cdrst.com/foto/hotel-sf/1a1a5/granderesp/apartamentos-16-9-suites-almeria-habitacion-801c7a8.jpg" width="640" height="400" alt="Room image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="room_card" class="card column">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4 has-text-black">Departamento</p>
+                            <p class="subtitle is-12 has-text-black">Alvaro Obregon, Olivar de los Padres, CDMX</p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        Departamento con amenidades y amueblado.
+                        <br>Perfecto para estudiantes.
+                        <br><br>
+                        <div class="field">
+                            <p class="control is-left has-text-centered">
+                                <button class="button is-danger" onclick="location.href=''">
+                                    Ver más
+                                </button>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+      </div>
+        </article>
+      </div>
+      <div class="tile is-parent is-4">
+        <article class="tile is-child notification">
+            <div class="content">
+          <section class="hero is-fullheight">
+        <div class="field" style="margin-right: auto; margin-left: auto; padding-top: 10px" >
+            <label class="label">Cambiar email</label>
+            <div class="control">
+                <input class="input" style="width: 400px;"type="email" placeholder="andy_carrillo@gmail.com">
+            </div>
+        </div>
+        <div class="field" style="margin-right: auto; margin-left: auto; padding-top: 10px" >
+            <label class="label">Cambiar teléfono</label>
+            <div class="control">
+                <input class="input" style="width: 400px;"type="text" placeholder="55 87 49 77 27">
+            </div>
+        </div>
+        <div class="field" style="margin-right: auto; margin-left: auto; padding-top: 10px" >
+            <label class="label">Cambiar contraseña</label>
+            <div class="control">
+                <input class="input" style="width: 400px;"type="password" placeholder="Contraseña">
+            </div>
+        </div>
+        <div class="field" style="margin-right: auto; margin-left: auto; padding-top: 10px" >
+            <label class="label">Verificar tu contraseña</label>
+            <div class="control">
+                <input class="input" style="width: 400px;"type="password" placeholder="Contraseña">
+            </div>
+        </div>
+        <div class="field" style="margin-right: auto; margin-left: auto; padding-top: 10px" >
+            <p class="control is-left has-text-centered">
+                <button class="button is-danger">
+                    Guardar cambios 
+                </button>
+            </p>
+        </div>
+        <br>
+    </section>
+        </article>
+      </div>
+    </div>
+    
+</div>
+            </div>
+    </section>
+</body>
+</html>
