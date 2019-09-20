@@ -1,5 +1,5 @@
 # Livin
-Equipo 5
+Equipo 5 :)
 
 Nota: Ya que el programa está hosteado en Heroku, la carga de las páginas será algo lenta.
 
